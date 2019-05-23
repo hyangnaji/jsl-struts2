@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.mulipart.maxSize" value="100000000" />
+	
+	<package name="default" extends="struts-default">
+		<!-- 시원님 -->
+
+		<action name="join" class="action.JoinAction">
+			<result name="success">/member/register_login.jsp</result>
+			<result name="error">/member/register_login.jsp</result>
+		</action>
+
+		<action name="findID" class="action.FindIDAction">
+			<result name="success">/member/findID_form.jsp</result>
+			<result name="error">/member/findID_findPW.jsp</result>
+		</action>
+
+		<action name="findPW" class="action.FindPWAction">
+			<result name="input" type="chain">
+				<param name="ActionName">rePW</param>
+			</result>
+			<result name="error">/member/findID_findPW.jsp</result>
+		</action>
+
+		<action name="rePW" class="action.Re_settingAction">
+			<result name="success">/member/register_login.jsp</result>
+			<result name="error">/member/findPW_form.jsp</result>
+		</action>
+
+		<action name="index" class="action.LoginAction" method="index">
+			<result name="success">/world/index_success.jsp </result>
+			<result name="login">/member/register_login.jsp</result>
+		</action>
+
+		<action name="login" class="action.LoginAction" method="login">
+			<result name="success" type="chain">index</result>
+			<result name="error">/member/register_login.jsp</result>
+		</action>
+
+		<action name="logout" class="action.LoginAction"
+			method="logout">
+			<result name="success" type="chain">index</result>
+		</action>
+
+		<action name="setting" class="action.SettingAction"
+			method="modify_leave">
+			<result name="success">/info/setting/leavemember.jsp</result>
+		</action>
+
+		<action name="modify_leave" class="action.Modify_LeaveAction">
+			<result name="success">/info/setting/modify_leave.jsp</result>
+			<result name="error">/info/setting/leavemember.jsp</result>
+		</action>
+
+		<action name="modify" class="action.LoginAction"
+			method="modify">
+			<result name="success">/world/index_success.jsp</result>
+			<result name="error">/info/setting/modify_leave.jsp</result>
+		</action>
+
+		<action name="leave" class="action.LoginAction" method="leave">
+			<result name="success">/member/register_login.jsp</result>
+			<result name="error">/info/setting/modify_leave.jsp</result>
+		</action>
+
+		<action name="music_register" class="action.MusicAction">
+			<result name="success" type="chain">
+				<param name="ActionName">musicaddress_update</param>
+			</result>
+			<result name="error">/music/index.jsp</result>
+		</action>
+
+		<action name="musicaddress_update"
+			class="action.MusicupdateAction">
+			<result name="success">/music/index.jsp</result>
+		</action>
+
+		<action name="cart_music" class="action.CartMusicAction">
+			<result name="success" type="chain">modify_music</result>
+			<result name="error">/member/musiclist.jsp</result>
+		</action>
+
+		<action name="modify_music" class="action.LoginAction"
+			method="modifymusic">
+			<result name="success">/world/index_success.jsp</result>
+			<result name="error">/member/musiclist.jsp</result>
+		</action>
+		
+		<action name="home_modify" class="action.HomeModifyAction">
+			<result name="success" type="chain">modify_info</result>
+			<result name="error">/info/setting/home_modify.jsp</result>
+		</action>
+		
+		<action name="modify_info" class="action.LoginAction" method="modify_info">
+			<result name="success">/world/index_success.jsp</result>
+			<result name="error">/info/setting/home_modify.jsp</result>
+		</action>
+		
+		<action name="usersearch" class="action.UserSearchAction">
+			<result name="success">/friends/userlist.jsp</result>
+			<result name="error">/friends/userlist.jsp</result>
+		</action>
+		
+		<action name= "musicdelete" class="action.MusicDeleteAction">
+			<result name="success">/member/musiclist.jsp</result>
+			<result name="error">/member/musiclist.jsp</result>
+		</action>
+		
+		<action name="photo_profile" class="action.Photo_profileAction">
+			<result name="success" type="chain">iterator</result>
+			<result name="error" type="chain">iterator</result>
+		</action>
+		
+		<action name="musicnamesearch" class="action.MusicSearch" method="musicname">
+			<result name="success">/member/musiclist.jsp</result>
+			<result name="error">/member/musiclist.jsp</result>
+		</action>
+		
+		<action name="musicartistsearch" class="action.MusicSearch" method="musicartist">
+			<result name="success">/member/musiclist.jsp</result>
+			<result name="error">/member/musiclist.jsp</result>
+		</action>
+
+		<!-- 혁주님 -->		
+		<action name="diaryinsert" class="action.DiaryinsertAction">
+			<result name="success">/info/diary/diaryview.jsp</result>
+			<result name="error">/info/diary/diaryinsert.jsp</result>
+		</action>
+
+		<action name="diaryview" class="action.DiaryviewAction">
+			<result name="success">/info/diary/diaryview.jsp</result>
+			<result name="error">/world/index_success.jsp</result>
+		</action>
+
+		<action name="diarymodify" class="action.DiarymodifyAction">
+			<result name="success">/info/diary/diaryview.jsp</result>
+			<result name="error">/info/diary/diaryinsert.jsp</result>
+		</action>
+
+		<action name="diarydelete" class="action.DiarydeleteAction">
+			<result name="success">/info/diary/diaryview.jsp</result>
+			<result name="error">/info/diary/diaryview.jsp</result>
+		</action>
+
+		<action name="photoinsert" class="action.PhotoinsertAction">
+			<result name="error">/info/photo/photoinsert.jsp</result>
+			<result name="success" type="chain">iterator</result>
+		</action>
+
+		<action name="photoview" class="action.PhotoviewAction">
+			<result name="success">/info/photo/photoinsert.jsp</result>
+			<result name="error">/info/photo/photoview.jsp</result>
+		</action>
+
+		<action name="iterator" class="action.IteratorAction">
+			<result name="error">/info/photo/photoview.jsp</result>
+			<result name="success">/info/photo/photoview.jsp</result>
+		</action>
+
+		<action name="photodelete" class="action.PhotodeleteAction">
+			<result name="error">/world/index_success.jsp</result>
+			<result name="success" type="chain">iterator</result>
+		</action>
+		
+		<action name="photomodify" class="action.PhotomodifyAction" >
+			<result name="error">/world/index_success.jsp</result>
+			<result name="success" type="chain">iterator</result>
+		</action>
+
+		<action name="addfriend" class="action.FriendsAction" method="addfriend">
+			<result name="success">/friends/message_success.jsp</result>
+			<result name="error">/friends/fail.jsp</result>
+		</action>
+
+		<action name="idfind" class="action.FriendsAction" method="idfind">
+			<result name="success">/friends/success.jsp</result>
+			<result name="error">/friends/fail.jsp</result>
+		</action>
+
+		<action name="namefind" class="action.FriendsAction" method="namefind">
+			<result name="success">/friends/success.jsp</result>
+			<result name="error">/friends/fail.jsp</result>
+		</action>
+
+		<action name="surfRiding" class="action.FriendsAction" method="surfRiding">
+			<result name="success">/friends/surf_success.jsp</result>
+			<result name="error">/friends/surf_fail.jsp</result>
+		</action>				
+		
+		<action name="friendlist" class="action.FriendsAction"
+			method="friendlist">
+			<result name="success">/friends/frinedlist.jsp</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		
+			<action name="deleteFriend" class="action.FriendsAction"
+			method="deleteFriend">
+			<result name="success" type="chain">friendlist</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		
+		<action name="modifyFriend" class="action.FriendsAction"
+			method="modifyFriend">
+			<result name="success" type="chain">friendlist</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		
+		<action name="removemsg" class="action.FriendsAction"
+			method="removemsg">
+			<result name="success" type="chain">msgFriend</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		
+		<action name="checkfmsg" class="action.FriendsAction"
+			method="checkfmsg">
+			<result name="success">/friends/friendreg.jsp</result>
+			<result name="error">/friends/fail.jsp</result>
+		</action>
+		
+		<action name="sendfmsg" class="action.FriendsAction"
+			method="sendfmsg">
+			<result name="success">/friends/message_success.jsp</result>
+			<result name="error">/friends/fail.jsp</result>
+		</action>
+		<action name="addfmsg" class="action.FriendsAction"
+			method="addfmsg">
+			<result name="success">/friends/addFriend.jsp</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		<action name="insertfriend" class="action.FriendsAction"
+			method="insertfriend">
+			<result name="success" type="chain">msgFriend</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		<action name="msgFriend" class="action.FriendsAction"
+			method="msgFriend">
+			<result name="success">/friends/msg_success.jsp</result>
+			<result name="error">/friends/msg_fail.jsp</result>
+		</action>
+		<action name="idfind" class="action.FriendsAction"
+			method="idfind">
+			<result name="success">/friends/success.jsp</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		<action name="namefind" class="action.FriendsAction"
+			method="namefind">
+			<result name="success">/friends/success.jsp</result>
+			<result name="error">/friends/login_success.jsp</result>
+		</action>
+		
+		<action name="surfRiding" class="action.FriendsAction"
+			method="surfRiding">
+			<result name="success">/friends/surf_success.jsp</result>
+			<result name="error">/friends/surf_fail.jsp</result>
+		</action>
+		
+	</package>
+</struts>
