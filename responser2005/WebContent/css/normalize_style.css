@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css?family=Dokdo&subset=korean'); */
+
+html{
+   font-family:
+
+}
+
+body {
+   background-size: cover;
+    background-image: url("/responser2005/css/image/swlee.jpg"); 
+/*    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                 url("https://i.pximg.net/img-master/img/2018/01/04/20/39/19/66642914_p0_master1200.jpg"); */
+   /*   68766307_p0 64226115_p0 */
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   /* font-family: 'Dokdo', cursive; */
+}
+
+a {
+   color: #FBCBBF;
+}
+
+a:hover {
+   color: #FF6679;
+}
+
+.form {
+   background: rgba(255, 255, 255, 0.9);
+   margin: 80px auto;
+   position:relative;
+}
+
+.tab-group li a {
+   background:#FBCBBF;
+   color: #000000;
+}
+
+.tab-group li a:hover {
+   background: #FF6679;
+   color: ;
+}
+
+.tab-group .active a {
+   background: #FF6679;
+   color: ;
+}   
+   
+h1 {
+   color: #000000;
+   font-weight: bold;
+}
+
+
+label {
+   color: #c8c8c8;
+   font-size: 18px;
+   margin: 5px 0 5px 0;
+}
+
+label .req {
+   color: #828282;
+   margin: ;
+}
+/**/
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+  color: #000000;
+}
+label.active .req {
+  opacity: 0;
+  color: #506EA5;
+}
+
+label.highlight {
+   color: #c8c8c8;
+}
+
+input, textarea {
+   border: 1.8px solid #FBCBBF;
+    color: #000000;
+}
+
+input:focus, textarea:focus {
+   border: 2.5px solid #FF6679;
+   color: #000000;
+}
+
+textarea {
+   border: 5px solid red;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+    color: #000000;
+  
+}
+
+.button {
+   background: #FBCBBF;
+   color: #FFFFFF;
+}
+
+.button:hover, .button:focus {
+   background: #FF6679;
+}

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+/* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
+
+.homepage_title{
+   color: #51768C;
+}
+
+.introduce_myself{
+   margin-left: 5px;
+   
+}
+
+.w3-text-grey{
+   color: #435964;
+   margin-bottom: 20px;
+}
+
+a{
+   text-decoration: none;
+   font-size: 12px;
+}
+
+.w3-text-teal{
+   font-size: 15px;   
+}
+
+.w3-large{
+   font-size: 15px;
+}
+
+.category{
+   position: relative;
+   top: 0px;
+   left: -90px;
+}
+
+.image_image{
+   margin: 0 auto;
+   margin-bottom: 5px;
+}
+
+.w3-margin-right{
+   color: #51768C;
+}
+
+
+
+i{
+   margin-left: 5px;
+   margin-right: 10px;
+   font-size: 20px;
+}
+
+.w3-container{
+   font-size: 14px;
+}
+
+
+
+.c_btn {
+   z-index: -1;
+   position: absolute;
+   margin-bottom: 10px;
+   padding: 5px 15px;
+   width: 150px;
+   height: 45px;
+   border-radius: 15px;
+   background: #fbcbbf;
+   color: #FFFFFF;
+   font-size: 16px;
+   font-weight: bolder;
+   text-align: center;
+   line-height: 2;      
+}
+
+
+.c_btn:hover {/*#049DBF*/
+   left: 1035px;
+   background: rgba(255, 255, 255, 1);
+   color: #ffb7aa;
+}
+   #c_icon {
+      float: right;
+      right: 0;
+      padding: 3px 0;
+   }
+      
+   #diary {
+      top: 0px;
+   }
+   
+   #photo {
+      top: 50px;
+   }
+   
+   #music {
+      top: 100px;
+   }
+   
+   #setting {
+      top: 150px;
+   } 
+
+
+h1 {
+   font-size: 36px
+}
+
+h2 {
+   font-size: 30px
+}
+
+h3 {
+   font-size: 24px
+}
+
+h4 {
+   font-size: 20px
+}
+
+h5 {
+   font-size: 18px
+}
+
+h6 {
+   font-size: 16px
+}
+
+.w3-serif {
+   font-family: serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Segoe UI", Arial, sans-serif;
+   font-weight: 400;
+   margin: 10px 0
+}
+
+.w3-wide {
+   letter-spacing: 4px
+}
+
+hr {
+   border: 0;
+   border-top: 1px solid #eee;
+   margin: 20px 0
+}
+
+.w3-image {
+   max-width: 100%;
+   height: auto
+}
+
+img {
+   vertical-align: middle
+}
+
+a {
+   color: inherit
+}
+
+
+.profiles{
+   margin-left:5px;
+   background: white;
+   width: 250px;
+   height: 450px;   
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+      rgba(0, 0, 0, 0.12);
+      
+   z-index: 1;
+}
+
+.new_news{
+   margin-left:5px;
+   background: white;
+   width: 700px;
+   height: 450px;   
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
+      rgba(0, 0, 0, 0.12);
+      
+   z-index: 1;
+}

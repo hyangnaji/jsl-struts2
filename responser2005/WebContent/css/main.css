@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* html,body {
+	width: 99%;
+	height: 95%;
+} */
+body {
+	@import url('https://fonts.googleapis.com/css?family=Kosugi|Nanum+Gothic:400,700&subset=japanese,korean');
+	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Kosugi', sans-serif;
+	position: static;
+	background-size: cover;
+	background-image: url("/responser2005/css/image/swlee.jpg");
+	/*	68766307_p0 64226115_p0 */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 5px;
+}
+
+.board {
+	display: block;
+	height: 97%;
+	background: rgba(0, 0, 0, 0.6);
+	border: 0.3px solid;
+}
+
+.header {
+	position: relative;
+	display: block;
+	height: 50px;
+	background: #FFFFFF;
+	border: 0.3px solid;
+	margin-bottom: 7px;
+}
+
+.profile {
+	height: 97%;
+
+}
+
+.form {
+	height: 97%;
+}
+
+/*** 
+	header css 
+				***/
+
+.player{
+	position: absolute;
+ 	float: left; 
+	top: -5px;
+	right: 250px;
+}
+
+.home {
+	position: absolute;
+	top: 2px;
+	left: 10px;
+}
+
+.h_btn {
+	top: 0;
+	width: 45px;;
+	height: 45px;
+	background: white;
+	color: #FF6679;
+	border-radius: 15px;
+	border: none;
+	font-size: 22px;
+	padding-top: 3px;
+}
+	.h_btn:hover {
+		background: FBCBBF;
+		/* color: #FFFFFF; */
+	}
+
+.count {
+	position: absolute;
+	float: left;
+	margin: 6px 0;
+	padding: 10px 0;
+	left: 150px;
+	width: 180px;
+	height: 18px;
+	border: 0.3px solid;
+	text-align: center;
+}
+	
+.logout {
+	position: absolute;
+	top: 2px;
+	right: 10px;
+	border-radius: 15px;
+	width: 45px;
+	height: 45px;
+	padding: 6px;
+	background: #FBCBBF;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bolder;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+
+	#out_icon {
+		position: absolute; 
+		float: right;
+		top: 11px;
+		right: 13px;
+	}			
+	
+	.logout:hover {
+	    background: #ffb7aa;
+	    color: #FFFFFF;
+  	}
+	
+	.logout:before, .logout:after {
+	  content:'';
+	  position:absolute;
+	  top:0;
+	  right:0;
+	  width:0;
+	  background: #1AAB8A;
+	  transition:400ms ease all;
+	}
+	
+	.logout:after{
+	  right:inherit;
+	  top:inherit;
+	  left:0;
+	  bottom:0;
+	}
+	
+	.logout:hover:before, logout:hover:after{
+	  width:100%;
+	  transition:800ms ease all;
+	}
+	
+				
+/*** 
+	profile css 
+				***/	
+div.profile_pic { /* 230 x 560 */
+	position: absolute;
+	float: left;
+	top: 100px;
+	margin: 0 10px;
+ 
+	display: block;
+	background: #FFFFFF;
+	border: 0.3px solid;
+	width: 210px;
+	height: 170px;
+}
+
+.info {
+	position: relative;
+	float: left;
+	top: 220px;
+	margin: 0 10px;
+	display: block;
+	background: #FFFFFF;
+	border: 0.3px solid;
+	
+	width: 210px;
+	height: 270px;
+	
+}
+
+.name {
+	position: relative;
+	float: left;
+	top: 10px;
+	margin-left: 10px;
+	display: block;
+	background: #FFFFFF;
+	border: 0.3px solid;
+	
+	width: 140px;
+	height: 35px;
+}
+
+.edit {
+/* 	display: block; */
+	position: absolute;
+	float: left;
+	top: -5px;swll
+	left: 145px;
+ 	border: none; 
+	padding: 5px;
+	background: #FFFFFF;
+	font-size: 8px;
+	width: 40px;
+	height: 40px;
+}
+
+
+				
+/*** 
+	center css 
+				***/
+				
+				
+/*** 
+	category css 
+				***/

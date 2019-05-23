@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body {
+	background-image: url("/a/css/bg_form.png");
+}
+/* 
+div {
+	
+}
+
+.form {
+	padding: 10px;
+	position: relative;
+}
+	
+.header {
+	display: block;
+	background: #F29BB2;
+	width: 100%;
+	height: 40px;
+	padding: auto;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+	
+.profile {
+	display: block;
+	background: #7F91E8;
+	float: left; 
+	width: 280px;
+	height: 520px;
+	padding: auto;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+	
+.main { /* form : 550 x 500  margin: 70px 0 0 295px;*/ /*
+	display: block;
+	background: #F24B99;
+	float: left; 
+	width: 620px;
+	height: 520px;
+	padding: auto;
+	margin-left: 20px;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+}
+	
+.menu {
+	display: block;
+	background: #D191E8;
+	float: left; 
+	width: 80px;
+	height: 520px;
+	padding: auto;
+	margin-left: 940px;
+	text-align: center;
+	font-size: 25px;	
+	color: #FFFFFF;
+}
+
+.player {
+	display: block;
+	background: #BF5E66;
+	float: left; 
+	width: 180px;
+	height: 150px;
+	padding: auto;
+	text-align: center;
+	font-size: 25px;
+	color: #FFFFFF;
+} */

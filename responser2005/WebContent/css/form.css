@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.d{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: 	#808080;
+	size: 1pt;
+}
+
+#content {
+    width: 460px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.input_row {
+    position: relative;
+    height: 29px;
+    margin: 0 0 14px;
+    padding: 10px 35px 10px 15px;
+    border: solid 1px #dadada;
+    background: #fff;
+}
+
+.btn_global {
+    display: block;
+    width: 100%;
+    margin: 30px 0 14px;
+    padding-top: 1px;
+    border: none;
+    border-radius: 0;
+    background-color: #FFDEC3;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    line-height: 61px;
+    -webkit-appearance: none;
+}
+
+.f_size{
+	
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
